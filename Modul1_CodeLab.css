@@ -1,0 +1,31 @@
+body {
+    background: white;
+    font-family: sans-serif;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    border: 3px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: yellow;
+}
+
+td:nth-child(even) {
+    background-color:black;
+    color: white;
+}
+
+td:nth-child(1) {
+    background-color: cyan;
+}
+
+td:nth-child(3) {
+    background-color: pink;
+}
