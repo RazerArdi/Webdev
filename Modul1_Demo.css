@@ -36,8 +36,8 @@ body {
   }
   
   .small-icon {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
   }
   
   .Fit-icon {
@@ -177,7 +177,7 @@ main {
 /* Header Styles (Specific for the Fast Jets Section) */
 .hero-section {
     background-color: #f0f0f0;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .hero-section .container {

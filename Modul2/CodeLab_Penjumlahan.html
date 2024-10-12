@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Penjumlahan</title>
+    <style>
+        form {
+            width: auto;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            height: 30px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button[type="button"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="button"]:hover {
+            background-color: #3e8e41;
+        }
+
+        #hasil {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Penjumlahan</h2>
+        <label>Bilangan pertama</label>
+        <input type="number" id="bil1" placeholder="Masukkan bilangan pertama">
+        <label>Bilangan kedua</label>
+        <input type="number" id="bil2" placeholder="Masukkan bilangan kedua">
+        <button type="button" onclick="tambah()">Jumlahkan</button>
+        <button type="reset">Reset</button>
+        <p>Hasil: <span id="hasil">0</span></p>
+    </form>
+
+    <script>
+        function tambah() {
+            var bil1 = parseInt(document.getElementById("bil1").value);
+            var bil2 = parseInt(document.getElementById("bil2").value);
+            var hasil = bil1 + bil2;
+            document.getElementById("hasil").innerHTML = hasil;
+        }
+    </script>
+</body>
+</html>
