@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8e8;
+    margin: 0;
+}
+
+.calculator {
+    width: 250px; /* Lebar disesuaikan agar fit */
+    background-color: #333;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.display {
+    background-color: #a0d3d8;
+    color: #333;
+    font-size: 2em;
+    text-align: right;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    overflow: hidden; /* Untuk teks panjang */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolom */
+    gap: 12px; /* Jarak antar tombol */
+}
+
+.button {
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 1.5em;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button:active {
+    background-color: #ccc;
+}
+
+.button-clear {
+    background-color: #f00;
+    color: #fff;
+}

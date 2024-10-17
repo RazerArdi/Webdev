@@ -1,0 +1,166 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+.sidebar {
+    width: 300px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+}
+.sidebar .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.sidebar .profile img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.sidebar .profile .name {
+    font-weight: bold;
+}
+.sidebar .profile .username {
+    color: gray;
+}
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+}
+.sidebar .menu li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.sidebar .menu li i {
+    margin-right: 10px;
+}
+.sidebar .menu li span {
+    flex-grow: 1;
+}
+.sidebar .menu li .count {
+    background-color: #ddd;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.sidebar .section-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: gray;
+}
+.sidebar .new-list {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: #0078d4;
+    cursor: pointer;
+}
+.sidebar .new-list i {
+    margin-right: 10px;
+}
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #e0f7fa;
+    padding: 20px;
+    overflow-y: auto;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.header .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+.header .filters {
+    display: flex;
+    align-items: center;
+}
+.header .filters button {
+    background-color: #e0f7fa;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.tasks {
+    flex-grow: 1;
+    margin-top: 20px;
+    overflow-y: auto;
+}
+.tasks .date-group {
+    margin-bottom: 20px;
+}
+.tasks .date-group .date {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.tasks .task {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.tasks .task .checkbox {
+    margin-right: 10px;
+}
+.tasks .task .details {
+    flex-grow: 1;
+}
+.tasks .task .details .title {
+    font-weight: bold;
+}
+.tasks .task .details .subtitle {
+    color: gray;
+    font-size: 12px;
+}
+.tasks .task .category {
+    font-size: 12px;
+    color: #0078d4;
+    margin-right: 10px;
+}
+.tasks .task .star {
+    color: gray;
+    cursor: pointer;
+}
+.tasks .task .star.active {
+    color: gold;
+}
+.tasks .task .delete {
+    margin-left: 10px;
+    color: red;
+    cursor: pointer;
+}
+.add-task {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.add-task button {
+    background-color: #0078d4;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}

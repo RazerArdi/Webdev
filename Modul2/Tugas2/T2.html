@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajer Tugas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="T2.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile">
+            <img alt="Gambar Profil" src="https://storage.googleapis.com/a1aa/image/nQU5qzzph9IyKd91QeRVOeoqkrtf51tyuin3JXDD6P5kpXPnA.jpg"/>
+            <div>
+                <div class="name">Bayu</div>
+                <div class="username">Ardi</div>
+            </div>
+        </div>
+        <ul class="menu">
+            <li><i class="fas fa-sun"></i><span>Hari Ini</span><div class="count">1</div></li>
+            <li><i class="fas fa-star"></i><span>Penting</span><div class="count">1</div></li>
+            <li><i class="fas fa-calendar-alt"></i><span>Direncanakan</span><div class="count">5</div></li>
+            <li><i class="fas fa-user"></i><span>Ditetapkan untuk Anda</span><div class="count">1</div></li>
+            <li><i class="fas fa-tasks"></i><span>Tugas</span></li>
+        </ul>
+        <div class="section-title">Keluarga</div>
+        <ul class="menu">
+            <li><i class="fas fa-list"></i><span>Pekerjaan Keluarga</span><div class="count">4</div></li>
+            <li><i class="fas fa-list"></i><span>Belanja Kebutuhan Pokok</span><div class="count">16</div></li>
+            <li><i class="fas fa-list"></i><span>Daftar Belanja Non-Makanan</span><div class="count">6</div></li>
+            <li><i class="fas fa-list"></i><span>Proyek Buku Kolaboratif</span><div class="count">9</div></li>
+            <li><i class="fas fa-list"></i><span>Tugas Tim Podcast</span></li>
+        </ul>
+        <div class="section-title">Pribadi</div>
+        <ul class="menu">
+            <li><i class="fas fa-list"></i><span>Tugas Pribadi</span></li>
+            <li><i class="fas fa-list"></i><span>Tujuan</span><div class="count">6</div></li>
+        </ul>
+        <div class="new-list"><i class="fas fa-plus"></i>Daftar Baru</div>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <div class="title">Direncanakan</div>
+            <div class="filters">
+                <button>Minggu Ini</button>
+                <button>Berdasarkan Tanggal Jatuh Tempo</button>
+            </div>
+        </div>
+        <div class="tasks" id="taskContainer">
+            <!-- Kelompok tugas akan dimasukkan di sini -->
+        </div>
+        <div class="add-task">
+            <button onclick="addTask()">+</button>
+        </div>
+    </div>
+
+    <script src="T2.js"></script>
+</body>
+</html>
