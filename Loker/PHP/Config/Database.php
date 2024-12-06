@@ -5,7 +5,7 @@ class Database {
     private $db_name = "lowongan_kerja";
     private $username = "root";
     private $password = "";
-    private $port = 3306; // Sesuaikan dengan port MySQL jika tidak default
+    private $port = 3306;
     public $conn;
 
     // Constructor untuk koneksi ke database
